@@ -2,7 +2,7 @@
 let cars = [{
     manufacturer: 'Porsche',
     model: '911',
-    price: 135000,
+    price: 321,
     wiki: 'http://en.wikipedia.org/wiki/Porsche_997',
     img: '2004_Porsche_911_Carrera_type_997.jpg'
 }, {
@@ -26,7 +26,7 @@ let cars = [{
 }, {
     manufacturer: 'Audi',
     model: 'TT',
-    price: 40000,
+    price: 4022000,
     wiki: 'http://en.wikipedia.org/wiki/Audi_TT',
     img: '250px-2007_Audi_TT_Coupe.jpg'
 }]

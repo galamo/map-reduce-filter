@@ -30,7 +30,7 @@ let car = data.find((car) => {
 let sumOfPrices = data.reduce((totalPrice, car) => {
     return totalPrice + car.price;
 }, 0)
-console.log(sumOfPrices)
+//console.log(sumOfPrices)
 
 
 let modelsString = data.reduce((manufacturerString, car) => {
@@ -44,6 +44,21 @@ let modelsString = data.reduce((manufacturerString, car) => {
     // }
 
 }, "")
-console.log(modelsString)
+//console.log(modelsString)
 
+
+let discounts = data.map((car) => {
+    return car.price * 0.7
+}).filter((p) => {
+    return p > 50000
+})
+//console.log(discounts)
+
+let mostExpensiveCar = data.reduce((mec, car) => {
+    console.log(mec)
+    return (mec.price || 0) > car.price ? mec : car;
+    //car.price = current price iteration from the current car;
+}, {})
+
+console.log(mostExpensiveCar)
 
